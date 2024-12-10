@@ -227,17 +227,6 @@
   link: https://doi.org/g8t76w
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1007/978-3-319-67186-4_4
-  title: High Performance Merging of Massive Data from Genome-Wide Association Studies
-  authors:
-  - Xiaobo Sun
-  - Fusheng Wang
-  - Zhaohui Qin
-  publisher: Lecture Notes in Computer Science
-  date: '2017-01-01'
-  link: https://doi.org/g8t76x
-  plugin: sources.py
-  file: sources.yaml
 - id: 10.1093/gigascience/giy052
   title: Optimized distributed systems achieve significant performance improvement
     on sorted merging of massive VCF files
