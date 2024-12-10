@@ -1,3 +1,7 @@
+<!--
+ * @Author: hjie huangjie20011001@163.com
+ * @Date: 2024-12-10 19:23:10
+-->
 ---
 title: Research
 nav:
@@ -12,11 +16,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
-## Highlighted
+<!-- ## Highlighted
 
 {% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
 
-{% include section.html %}
+{% include section.html %} -->
 
 ## All
 
