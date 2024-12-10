@@ -1,0 +1,92 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-12-10 09:13:14
+-->
+---
+title: Team
+nav:
+  order: 3
+  tooltip: About our team
+---
+
+<!-- # {% include icon.html icon="fa-solid fa-users" %}Team
+孙晓波生物信息实验室
+{% include section.html %}
+{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
+{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+{% include section.html background="images/background.jpg" dark=true %}
+硕士研究生
+{% include section.html %}
+{% capture content %}
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
+{% endcapture %}
+本科生
+{% include section.html %}
+{% capture content %}
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
+{% endcapture %}
+{% include grid.html style="square" content=content %} -->
+
+
+# {% include icon.html icon="fa-solid fa-users" %}Team
+
+孙晓波生物信息实验室
+
+{% include section.html %}
+
+## 实验室负责人
+
+{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
+
+## 合作伙伴
+{% assign partners = site.data.members | where: "role", "partner" %}
+{% capture partner_content %}
+  {% for member in partners %}
+    <div class="partner">
+      {% include figure.html image=member.photo alt=member.name %}
+      <p>{{ member.name }}</p>
+      <p>{{ member.description }}</p>
+    </div>
+  {% endfor %}
+{% endcapture %}
+
+{% include grid.html style="square" content=partner_content %}
+
+## 硕士研究生
+
+{% assign grad_students = site.data.members | where: "role", "graduate_student" %}
+{% for member in grad_students %}
+  <div class="member">
+    {% include figure.html image=member.photo alt=member.name %}
+    <p>{{ member.name }}</p>
+    <p>{{ member.description }}</p>
+  </div>
+{% endfor %}
+
+## 本科生
+
+{% assign undergrad_students = site.data.members | where: "role", "undergraduate_student" %}
+{% capture content %}
+  {% for member in undergrad_students %}
+    <div class="member">
+      {% include figure.html image=member.photo alt=member.name %}
+      <p>{{ member.name }}</p>
+      <p>{{ member.description }}</p>
+    </div>
+  {% endfor %}
+{% endcapture %}
+
+{% include grid.html style="square" content=content %}
+
+## 已毕业学生
+
+{% assign alumni = site.data.members | where: "role", "alumni" %}
+<ul>
+  {% for member in alumni %}
+    <li>{{ member.name }}</li>
+  {% endfor %}
+</ul>
