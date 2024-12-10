@@ -1,10 +1,11 @@
 ---
-name: John Doe
-image: images/photo.jpg
-role: phd
-group: alum
+name: Huang Jie
+image: images/member/man.png
+description: Master
+role: programmer
 links:
-  github: john-doe
+  email: hjie20011001@gmail.com
+  twitter: None
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
