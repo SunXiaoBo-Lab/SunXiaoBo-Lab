@@ -21,13 +21,13 @@ nav:
 <div class="students-split">
   <div class="Master">
     <h3>Master</h3>
-    {% include list.html data="members" component="portrait" filter="student_type == 'Master'" %}
+    {% include list.html data="members" component="portrait" filter="description == 'Master'" %}
   </div>
 
   <!-- 显示本科生 -->
   <div class="Undergraduate">
     <h3>Undergraduate</h3>
-    {% include list.html data="members" component="portrait" filter="student_type == 'Undergraduate'" %}
+    {% include list.html data="members" component="portrait" filter="description == 'Undergraduate'" %}
   </div>
 </div>
 
@@ -39,19 +39,6 @@ nav:
 
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
 <!-- {% include list.html data="members" component="portrait" filter="role != 'pi'" %} -->
-
-<!-- <div class="students-split">
-  <div class="Master">
-    <h3>Master</h3>
-    {% include list.html data="members" component="portrait" filter="student_type == 'Master'" %}
-  </div>
-
-  <div class="Undergraduate">
-    <h3>Undergraduate</h3>
-    {% include list.html data="members" component="portrait" filter="student_type == 'Undergraduate'" %}
-  </div>
-</div> --> -->
-
 
 <!-- {% include section.html background="images/background.jpg" dark=true %} -->
 
