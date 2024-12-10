@@ -1,7 +1,3 @@
-<!--
- * @Author: hjie huangjie20011001@163.com
- * @Date: 2024-12-10 19:23:10
--->
 ---
 title: Research
 nav:
