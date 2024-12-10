@@ -40,26 +40,8 @@ nav:
 
 ## 实验室负责人
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-
-## 合作伙伴
-{% assign partners = site.data.members | where: "role", "partner" %}
-{% capture partner_content %}
-  {% for member in partners %}
-    <div class="partner">
-      {% include figure.html image=member.photo alt=member.name %}
-      <p>{{ member.name }}</p>
-      <p>{{ member.description }}</p>
-    </div>
-  {% endfor %}
-{% endcapture %}
-
-{% include grid.html style="square" content=partner_content %}
-
-## 硕士研究生
-
-{% assign grad_students = site.data.members | where: "role", "graduate_student" %}
-{% for member in grad_students %}
+{% assign pi = site.data.members | where: "role", "pi" %}
+{% for member in pi %}
   <div class="member">
     {% include figure.html image=member.photo alt=member.name %}
     <p>{{ member.name }}</p>
@@ -67,10 +49,36 @@ nav:
   </div>
 {% endfor %}
 
+## 合作伙伴
+
+{% assign partners = site.data.members | where: "role", "partner" %}
+<div class="partners">
+  {% for member in partners %}
+    <div class="partner">
+      {% include figure.html image=member.photo alt=member.name %}
+      <p>{{ member.name }}</p>
+      <p>{{ member.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+## 硕士研究生
+
+{% assign grad_students = site.data.members | where: "role", "graduate_student" %}
+<div class="grad-students">
+  {% for member in grad_students %}
+    <div class="member">
+      {% include figure.html image=member.photo alt=member.name %}
+      <p>{{ member.name }}</p>
+      <p>{{ member.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
 ## 本科生
 
 {% assign undergrad_students = site.data.members | where: "role", "undergraduate_student" %}
-{% capture content %}
+<div class="undergrad-students">
   {% for member in undergrad_students %}
     <div class="member">
       {% include figure.html image=member.photo alt=member.name %}
@@ -78,14 +86,12 @@ nav:
       <p>{{ member.description }}</p>
     </div>
   {% endfor %}
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+</div>
 
 ## 已毕业学生
 
 {% assign alumni = site.data.members | where: "role", "alumni" %}
-<ul>
+<ul class="alumni">
   {% for member in alumni %}
     <li>{{ member.name }}</li>
   {% endfor %}
