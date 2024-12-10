@@ -8,7 +8,7 @@ nav:
 {% include icon.html icon="fa-solid fa-users" %}
 
 <!-- 团队名称 -->
-<h1>孙晓波生物信息实验室</h1>
+<h1>SunXiaobo-Lab</h1>
 
 <!-- 包含额外的HTML内容 -->
 {% include section.html %}
@@ -30,30 +30,3 @@ nav:
     {% include list.html data="members" component="portrait" filter="description == 'Undergraduate'" %}
   </div>
 </div>
-
-<!-- # {% include icon.html icon="fa-solid fa-users" %}Team
-
-孙晓波生物信息实验室
-
-{% include section.html %}
-
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-<!-- {% include list.html data="members" component="portrait" filter="role != 'pi'" %} -->
-
-<!-- {% include section.html background="images/background.jpg" dark=true %} -->
-
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %} -->
