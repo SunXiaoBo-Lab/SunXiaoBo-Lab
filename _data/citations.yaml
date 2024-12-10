@@ -1,21 +1,5 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkx258
-  title: 'Omicseq: a web-based search engine for exploring omics datasets'
-  authors:
-  - Xiaobo Sun
-  - William S. Pittard
-  - Tianlei Xu
-  - Li Chen
-  - Michael E. Zwick
-  - Xiaoqian Jiang
-  - Fusheng Wang
-  - Zhaohui S. Qin
-  publisher: Nucleic Acids Research
-  date: '2017-04-10'
-  link: https://doi.org/g8t779
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1038/s41467-021-24710-8
   title: "A machine learning approach to brain epigenetic analysis reveals kinases\
     \ associated with Alzheimer\u2019s disease"
@@ -40,55 +24,4 @@
   date: '2021-07-22'
   link: https://doi.org/g8t76w
   plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1007/978-3-319-67186-4_4
-  title: High Performance Merging of Massive Data from Genome-Wide Association Studies
-  authors:
-  - Xiaobo Sun
-  - Fusheng Wang
-  - Zhaohui Qin
-  publisher: Lecture Notes in Computer Science
-  date: '2017-01-01'
-  link: https://doi.org/g8t76x
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1172/JCI92087
-  title: "CRISPR/Cas9-mediated gene editing ameliorates neurotoxicity in mouse model\
-    \ of Huntington\u2019s disease"
-  authors:
-  - Su Yang
-  - Renbao Chang
-  - Huiming Yang
-  - Ting Zhao
-  - Yan Hong
-  - Ha Eun Kong
-  - Xiaobo Sun
-  - Zhaohui Qin
-  - Peng Jin
-  - Shihua Li
-  - Xiao-Jiang Li
-  publisher: Journal of Clinical Investigation
-  date: '2017-06-19'
-  link: https://doi.org/gbmj8x
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1093/gigascience/giy052
-  title: Optimized distributed systems achieve significant performance improvement
-    on sorted merging of massive VCF files
-  authors:
-  - Xiaobo Sun
-  - Jingjing Gao
-  - Peng Jin
-  - Celeste Eng
-  - Esteban G Burchard
-  - Terri H Beaty
-  - Ingo Ruczinski
-  - Rasika A Mathias
-  - Kathleen Barnes
-  - Fusheng Wang
-  - Zhaohui S Qin
-  publisher: GigaScience
-  date: '2018-05-10'
-  link: https://doi.org/gpf4qv
-  plugin: sources.py
-  file: sources.yaml
+  file: sources_new.yaml
